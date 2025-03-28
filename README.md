@@ -1,5 +1,6 @@
 
 
+
 # crud api go
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joaomello10/crud-api-go?style=for-the-badge)
@@ -62,6 +63,59 @@ go run cmd/api/main.go
     "created_at": "2025-03-27T18:48:49.836731-03:00",
     "updated_at": "2025-03-27T18:48:55.408299-03:00"
   }
+]
+```
+### Get especified notes
+
+**GET** `/note/:id`
+
+#### Response `/note/3`
+```json
+[
+  {
+    "ID": 3,
+    "Title": "Foo",
+    "Body": "Bar",
+    "created_at": "2025-03-27T18:48:49.836731-03:00",
+    "updated_at": "2025-03-27T18:48:55.408299-03:00"
+  },
+]
+```
+### Create Note
+
+**POST** `/new`
+
+#### Body 
+```json
+[
+  {
+    "Title": "Foo",
+    "Body": "Bar",
+  },
+]
+```
+### Update note
+
+**PUT** `/note/:id`
+
+#### Body
+```json
+[
+ {
+    "Title": "Foo 2",
+    "Body": "Bar 2",
+  },
+]
+```
+
+### Delete note
+
+**DELETE** `/note/:id`
+
+#### Response `/note/3`
+```json
+[
+ {"message": "Post deleted successfully"}
 ]
 ```
 
