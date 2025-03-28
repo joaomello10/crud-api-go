@@ -21,7 +21,7 @@
 Linux and macOS:
 
 ```
-git clone
+git clone https://github.com/joaomello10/crud-api-go.git
 ```
 
 ## ☕ Using API
