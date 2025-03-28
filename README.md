@@ -34,6 +34,13 @@ docker-compose up -d
 
 ### then postgres start, run:
 
+verify ``cmd/initializers/database.go"`` credentials
+
+```
+go run cmd/migrates/migrate.go
+```
+
+
 ```
 go run cmd/api/main.go
 ```
